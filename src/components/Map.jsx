@@ -17,7 +17,7 @@ const Map = ({ location, hospitals }) => {
 
     hospitals.forEach((hospital) => {
       const { lat, lon, display_name } = hospital;
-      L.marker([lat, lon]).addTo(map).bindPopup(display_name);
+      L.marker([lat, lon]).addTo(map).bindPopup(display_name); 
     });
 
     return () => {
